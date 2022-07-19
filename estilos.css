@@ -1,6 +1,9 @@
 * {
     margin: 0px;
     padding: 0px; }
+    body{
+        background-color: beige;
+    }
 
     header{
         background-color: rosybrown;
@@ -21,4 +24,89 @@
         .mercu li a {
             text-decoration: none;
             color: beige; }
+
+        
+.item{
+    height: 200px;
+    border: 2px solid black;
+    margin: 20px;
+    box-shadow: 2px 2px 5px black;
+    text-shadow: 1px 2px 3px black;
+}
+.item:hover{
+    transform: scale(1.05);
+    transition: all 0.9s;
+}
+
+.item1{
+    background-image: url(img/caballo.jpg);
+    text-align: center;
+    padding: 20%;
+    font-size: 200%;
+
+    background-size: cover;
+    background-position: center;
+}
+.item2{
+    background-image: url(img/florlila.jpg);
+    text-align: center;
+    padding: 20%;
+    font-size: 200%;
+    background-size: cover;
+    background-position: center;
+}
+.item3{
+    background-image: url(img/fruta.jpg);
+    text-align: center;
+    padding: 20%;
+    font-size: 200%;
+    background-size: cover;
+    background-position: center;
+}
+.item4{
+    background-image: url(img/hormiga.jpg);
+    text-align: center;
+    padding: 20%;
+    font-size: 200%;
+    background-size: cover;
+    background-position: center;
+}
+
+@media only screen and (min-width:600px){
+    .Tienda{
+        display:grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .nosotros{
+        flex-wrap: nowrap;
+    }
     
+}
+
+
+@media only screen and (min-width:768px) and (max-width:1023px) {
+    .Tienda{
+        grid-template-columns: 1fr 1fr;
+    }
+    
+   
+    
+   
+}
+footer{
+    background-color:rgb(14, 13, 13) ;
+    color: rgb(235, 159, 222);
+    text-align: center;
+    padding: 20px;
+}
+footer p{
+    font-size: 30px;
+    font-family: 'Cormorant Garamond', serif;
+    margin-bottom: 10px;
+}
+footer i{
+    font-size: 40px;
+    letter-spacing: 20px;
+    color: rgb(235, 159, 222);
+
+}
